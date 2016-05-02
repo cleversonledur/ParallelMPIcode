@@ -1,3 +1,8 @@
+/*
+Created by Cleverson Ledur
+Date: 10/10/2014
+*/
+
 #include<stdio.h>
 #include"mpi.h"
 #include<stdlib.h>
