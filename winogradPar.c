@@ -74,7 +74,6 @@ for(C=0;C<N;C++){
 	for(K=1;K<P;K++)
 		termo_coluna[C] += B[2*K*N+C] * B[(2*K+1)*N+C];
 }
-//#pragma omp parallel for default(none) private(L,C,P,K) shared(N,B,A,termo_coluna,termo_linha,Resultado)
 #pragma omp parallel for private(L,C,K) 
 for(L=0; L<N; L++){
 	for(C=0;C<N;C++){
